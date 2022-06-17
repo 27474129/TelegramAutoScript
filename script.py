@@ -45,7 +45,6 @@ def login(driver):
             elems = driver.find_elements(By.CLASS_NAME, "c-ripple")
             for elem in elems:
                 if (current_chat_number == chat_number + 2):
-                    print(current_chat_number, chat_number)
                     sleep(2)
                     elem.click()
                 current_chat_number += 1
